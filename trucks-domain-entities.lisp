@@ -128,7 +128,7 @@
 ;; [exists box : box-in(rome, situation), 10;
 ;;  not exists box : box-in(rome, situation), 0]
 ;; Removed situation argument.
-#+(or)
+;; #+(or)
 (defun create-reward-function ()
   (let ((reward-case (make-instance 'sdp-case
 				    :formula '(exists ((a-box :sort box))
@@ -147,7 +147,7 @@
     reward-cases))
 
 ;; Grounded reward function.
-;;#+(or)
+#+(or)
 (defun create-reward-function ()
   (let ((reward-case (make-instance 'sdp-case 
 				    :formula '(box-in superbox rome)

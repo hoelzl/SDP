@@ -16,7 +16,7 @@
   (let ((formula (formula sdp-case)))
     (if (not (consp (formula sdp-case)))
 	(error "Not an s-expression: ~S." formula)
-	(to-sexpr formula))))
+	formula)))
 
 (defun formula-alias-sexpr (sdp-case)
   (to-sexpr (formula-alias sdp-case)))

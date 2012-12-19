@@ -5,7 +5,7 @@
   :description "Symbolic Dynamic Programming"
   :version "0.0.1"
   :author "Lenz Belzner"
-  :license "???"
+  :license "MIT, see file LICENSE"
   :depends-on (#:snark)
   :components ((:file "utils")
 	       (:file "sdp-case")
